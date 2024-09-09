@@ -1,0 +1,16 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+@inject NavigationManager Navigation
+
+<button @onclick="GoToPage">Navegar al componente Contador</button>
+
+@code {
+    void GoToPage()
+    {
+        // Navigating to the About page
+        Navigation.NavigateTo("/counter", true);
+    }
+}
+
